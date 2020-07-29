@@ -7,6 +7,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   background: ${({ theme }) => theme.colors.mainColor};
+  color: ${({ theme }) => theme.colors.textColor};
 `;
 
 const TitleContainer = styled.div`

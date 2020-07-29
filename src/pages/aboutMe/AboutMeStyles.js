@@ -6,8 +6,7 @@ const PageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.mainColor};
-  color: ${({ theme }) => theme.colors.textColor};
+  background: ${({ theme }) => theme.colors.mainColorContrast};
 `;
 
 const TitleContainer = styled.div`
@@ -20,23 +19,11 @@ const Title = styled.h1`
   font-size: 64px;
   letter-spacing: 8px;
   text-transform: uppercase;
-`;
-
-const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 24px;
-  margin-bottom: 4px;
-  letter-spacing: 4px;
-  text-transform: capitalize;
-
-  &:hover {
-    font-weight: 600;
-  }
+  color: ${({ theme }) => theme.colors.textColorContrast};
 `;
 
 export {
   PageWrapper,
   Title,
   TitleContainer,
-  Subtitle,
 };

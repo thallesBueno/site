@@ -8,6 +8,7 @@ import HomePage from './pages/home/Home';
 import AboutMePage from './pages/aboutMe/AboutMe';
 import ProjectsPage from './pages/projects/Projects';
 import ContactPage from './pages/contact/Contact';
+import SkillsPage from './pages/skills/Skills';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <DeafaultLayout>
         <HomePage />
         <AboutMePage />
+        <SkillsPage />
         <ProjectsPage />
         <ContactPage />
       </DeafaultLayout>

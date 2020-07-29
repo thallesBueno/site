@@ -6,7 +6,7 @@ import {
 const AboutMe = () => (
   <PageWrapper>
     <ContentContainer>
-      <Title>Projects</Title>
+      <Title>My Projects</Title>
     </ContentContainer>
   </PageWrapper>
 );

@@ -1,18 +1,16 @@
 import React from 'react';
 import {
   PageWrapper, Title, TitleContainer,
-} from './ContactStyles';
+} from './SkillsStyles';
 
-const Contact = () => (
+const Skilss = () => (
   <PageWrapper>
     <TitleContainer>
       <Title>
-        Where you can
-        <br />
-        find me?
+        My Skills
       </Title>
     </TitleContainer>
   </PageWrapper>
 );
 
-export default Contact;
+export default Skilss;
