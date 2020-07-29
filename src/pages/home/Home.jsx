@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  PageWrapper, Title, TitleContainer, Subtitle,
+  PageWrapper, Title, TitleContainer, Subtitle
 } from './HomeStyles';
 
 const Home = () => (
