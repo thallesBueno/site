@@ -1,14 +1,14 @@
 import React from 'react';
 import {
   PageWrapper, Title, TitleContainer,
-} from './AboutMeStyles';
+} from './ContactStyles';
 
-const AboutMe = () => (
+const Contact = () => (
   <PageWrapper>
     <TitleContainer>
-      <Title>About me</Title>
+      <Title>Contacts</Title>
     </TitleContainer>
   </PageWrapper>
 );
 
-export default AboutMe;
+export default Contact;
