@@ -1,10 +1,10 @@
 const defaultTheme = {
-  name: 'defaultTheme',
+  name: 'dark',
   colors: {
-    mainColor: '#fff',
+    mainColor: '#212121',
     mainColorContrast: '#212121',
-    textColor: '#1A1A1A',
-    textColorContrast: '#fff',
+    textColor: '#e4e5df',
+    textColorContrast: '#e4e5df',
   },
 };
 

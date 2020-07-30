@@ -6,7 +6,6 @@ const PageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.mainColorContrast};
 `;
 
 const TitleContainer = styled.div`
@@ -19,7 +18,6 @@ const Title = styled.h1`
   font-size: 64px;
   letter-spacing: 8px;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.textColorContrast};
 `;
 
 export {
