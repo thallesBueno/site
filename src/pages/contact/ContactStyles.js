@@ -14,27 +14,28 @@ const TitleContainer = styled.div`
 
 const Title = styled.h1`
   font-weight: 600;
-  margin-bottom: 24px;
-  font-size: 64px;
+  margin-bottom: 64px;
+  font-size: 48px;
   letter-spacing: 8px;
   text-transform: uppercase;
 `;
 
-const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 24px;
-  margin-bottom: 4px;
+const ContactsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const ContactLink = styled.a`
+  font-size: 20px;
   letter-spacing: 4px;
   text-transform: capitalize;
-
-  &:hover {
-    font-weight: 600;
-  }
+  text-decoration: none;
 `;
 
 export {
   PageWrapper,
   Title,
   TitleContainer,
-  Subtitle,
+  ContactsContainer,
+  ContactLink,
 };
