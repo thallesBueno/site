@@ -8,23 +8,26 @@ const PageWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleContainer = styled.div`
+const ContentContainer = styled.div`
   text-align: center;
 `;
 
 const Title = styled.h1`
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 64px;
   font-size: 64px;
-  letter-spacing: 8px;
+  letter-spacing: 16px;
   text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 2px ${({ theme }) => theme.colors.textColor};
 `;
 
 const Subtitle = styled.p`
+  padding: 1px 8px;
+  margin-bottom: 8px;
   font-weight: 300;
   font-size: 24px;
-  margin-bottom: 4px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-transform: capitalize;
 
   &:hover {
@@ -34,7 +37,7 @@ const Subtitle = styled.p`
 
 export {
   PageWrapper,
+  ContentContainer,
   Title,
-  TitleContainer,
   Subtitle,
 };
