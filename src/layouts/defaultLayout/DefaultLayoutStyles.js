@@ -5,6 +5,7 @@ const ChildrenWrapper = styled.div`
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
+  background: ${({ theme }) => theme.colors.mainColor};
 `;
 
 export default ChildrenWrapper;

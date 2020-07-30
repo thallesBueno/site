@@ -1,8 +1,9 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import defaultTheme from './styles/themes/defaultTheme';
 import GlobalStyle from './styles/global';
 import DeafaultLayout from './layouts/defaultLayout/DefaultLayout';
+import lightTheme from './styles/themes/lightTheme';
+import darkTheme from './styles/themes/darkTheme';
 
 import HomePage from './pages/home/Home';
 import AboutMePage from './pages/aboutMe/AboutMe';
@@ -10,11 +11,20 @@ import ProjectsPage from './pages/projects/Projects';
 import ContactPage from './pages/contact/Contact';
 import SkillsPage from './pages/skills/Skills';
 
-function App() {
+import ThemeSwitch from './components/themeSwitch/ThemeSwitch';
+
+import usePersistedState from './utils/hooks/useTheme';
+
+const App = () => {
+  const [theme, setTheme] = usePersistedState('theme', lightTheme);
+
+  const handleThemeSwitch = () => setTheme((oldTheme) => (oldTheme.name === 'light' ? darkTheme : lightTheme));
+
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <DeafaultLayout>
+        <ThemeSwitch onClick={handleThemeSwitch} />
         <HomePage />
         <AboutMePage />
         <SkillsPage />
@@ -23,6 +33,6 @@ function App() {
       </DeafaultLayout>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

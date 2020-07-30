@@ -6,7 +6,6 @@ const PageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${({ theme }) => theme.colors.mainColor};
 `;
 
 const TitleContainer = styled.div`

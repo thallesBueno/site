@@ -7,6 +7,8 @@ export default createGlobalStyle`
     padding: 0px;
     box-sizing: border-box;
     color: ${({ theme }) => theme.colors.textColor};
+    transition-timing-function: ease-in-out;
+    transition: color 1s, background-color 1s;
   }
   
 `;
