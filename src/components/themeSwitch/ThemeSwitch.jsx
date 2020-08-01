@@ -3,8 +3,8 @@ import ProTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: none;
   background: ${({ theme }) => theme.colors.textColor};
@@ -12,6 +12,10 @@ const StyledButton = styled.button`
   position: fixed;
   top: 16px;
   right: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ThemeSwitch = ({ onClick }) => (

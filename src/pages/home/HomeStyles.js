@@ -32,6 +32,7 @@ const Subtitle = styled.p`
 
   &:hover {
     font-weight: 600;
+    cursor: pointer;
   }
 `;
 
