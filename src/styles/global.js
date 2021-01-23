@@ -8,7 +8,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     color: ${({ theme }) => theme.colors.textColor};
     transition-timing-function: ease-in-out;
-    transition: color 1s, background-color 1s;
+    transition: color ${({ theme }) => theme.transitionDuration}, background-color ${({ theme }) => theme.transitionDuration};
   }
   
 `;

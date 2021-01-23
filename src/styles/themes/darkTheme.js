@@ -6,6 +6,7 @@ const defaultTheme = {
     textColor: '#e4e5df',
     textColorContrast: '#e4e5df',
   },
+  transitionDuration: '1s',
 };
 
 export default defaultTheme;
