@@ -10,5 +10,10 @@ export default createGlobalStyle`
     transition-timing-function: ease-in-out;
     transition: color ${({ theme }) => theme.transitionDuration}, background-color ${({ theme }) => theme.transitionDuration};
   }
+
+  html, body, #root {
+    width: 100%;
+    height: 100%;
+  }
   
 `;
