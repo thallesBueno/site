@@ -9,6 +9,11 @@ export default createGlobalStyle`
     color: ${({ theme }) => theme.colors.textColor};
     transition-timing-function: ease-in-out;
     transition: color ${({ theme }) => theme.transitionDuration}, background-color ${({ theme }) => theme.transitionDuration};
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   html, body, #root {

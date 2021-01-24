@@ -11,11 +11,22 @@ const Container = styled.div`
   outline: none;
   position: fixed;
   top: 50%;
-  left: 16px;
+  right: 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  transform: translate(0%, ${({ topOffset }) => -topOffset}%);
+  align-items: flex-end;
+  transform: translate(0%, -50%);
+`;
+
+const Circle = styled.div`
+  position: absolute;
+  right: -20px;
+  top: calc(${({ topOffset }) => topOffset * 0.91}% + 12px);
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: ${({ theme }) => theme.colors.mainColorContrast};  
 `;
 
 const StyledLink = styled(Link)`
@@ -36,7 +47,6 @@ const StyledLink = styled(Link)`
 
   &.active {
     font-weight: 600;
-    transform: translate(24px, 0px);
     transition: transform 0.5s;
   }
 `;
@@ -45,14 +55,15 @@ const LateralNavBar = ({ pages }) => {
   const scrollPosition = useScrollPosition(0);
 
   return (
-    <Container topOffset={scrollPosition}>
+    <Container>
+      <Circle topOffset={scrollPosition} />
       {pages.map((page) => (
         <StyledLink
           activeClass="active"
           to={page.pageId}
           spy
           smooth="linear"
-          duration={(distance) => ((Math.abs(distance) / 800) * 150)}
+          duration={(distance) => ((Math.abs(distance) / 800) * 50) + 200}
           key={page.pageId}
         >
           {page.pageName}
