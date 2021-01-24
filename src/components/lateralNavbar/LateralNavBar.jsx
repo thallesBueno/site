@@ -42,11 +42,11 @@ const StyledLink = styled(Link)`
 
   &:hover {
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   &.active {
-    font-weight: 600;
+    font-weight: 700;
     transition: transform 0.5s;
   }
 `;
