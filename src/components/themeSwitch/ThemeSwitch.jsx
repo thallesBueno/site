@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   outline: none;
   position: fixed;
   top: 16px;
-  right: 32px;
+  right: 16px;
 
   &:hover {
     cursor: pointer;

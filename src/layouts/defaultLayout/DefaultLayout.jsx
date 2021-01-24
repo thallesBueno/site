@@ -9,7 +9,11 @@ const DeafaultLayout = ({ children }) => (
 );
 
 DeafaultLayout.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 export default DeafaultLayout;
