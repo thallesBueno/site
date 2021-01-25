@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  PageWrapper, Title, ContentContainer, Subtitle,
+  PageWrapper, Title, ContentContainer,
 } from './HomeStyles';
 
 const Home = () => (
   <PageWrapper>
     <ContentContainer>
-      <Title>thalles</Title>
-      <Subtitle>about me</Subtitle>
+      <Title>thalles bueno</Title>
+      {/* <Subtitle>about me</Subtitle>
       <Subtitle>skills</Subtitle>
       <Subtitle>projects</Subtitle>
-      <Subtitle>contacts</Subtitle>
+      <Subtitle>contacts</Subtitle> */}
     </ContentContainer>
   </PageWrapper>
 );

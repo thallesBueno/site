@@ -26,10 +26,15 @@ const ContactsContainer = styled.div`
 `;
 
 const ContactLink = styled.a`
+  width: 33%;
   font-size: 20px;
   letter-spacing: 4px;
   text-transform: capitalize;
   text-decoration: none;
+
+  &:hover {
+    font-weight: 700;
+  }
 `;
 
 export {
