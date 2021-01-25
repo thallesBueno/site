@@ -16,7 +16,8 @@ const Title = styled.h1`
   font-weight: 600;
   margin-bottom: 64px;
   font-size: 64px;
-  letter-spacing: 16px;
+  letter-spacing: 8px;
+  padding-left: 8px;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 2px ${({ theme }) => theme.colors.textColor};
