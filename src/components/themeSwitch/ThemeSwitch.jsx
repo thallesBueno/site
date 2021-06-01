@@ -10,11 +10,17 @@ const StyledButton = styled.button`
   background: ${({ theme }) => theme.colors.textColor};
   outline: none;
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+  transition: 0.2s;
+  transform: translate(50%, -50%);
+
 
   &:hover {
-    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    transition: 0.2s;
   }
 `;
 

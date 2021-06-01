@@ -15,8 +15,7 @@ const ContentContainer = styled.div`
 const Title = styled.h1`
   font-weight: 600;
   margin-bottom: 64px;
-  font-size: 64px;
-  letter-spacing: 8px;
+  font-size: 96px;
   padding-left: 8px;
   text-transform: uppercase;
   color: transparent;

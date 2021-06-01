@@ -6,11 +6,11 @@ import {
 const Home = () => (
   <PageWrapper>
     <ContentContainer>
-      <Title>thalles bueno</Title>
-      {/* <Subtitle>about me</Subtitle>
-      <Subtitle>skills</Subtitle>
-      <Subtitle>projects</Subtitle>
-      <Subtitle>contacts</Subtitle> */}
+      <Title>
+        thalles
+        <br />
+        bueno
+      </Title>
     </ContentContainer>
   </PageWrapper>
 );
