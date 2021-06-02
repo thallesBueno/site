@@ -1,15 +1,14 @@
 import React from 'react';
+import PageTitle from '../../components/pageTitle';
 import {
-  PageWrapper, Title, TitleContainer,
-} from './SkillsStyles';
+  PageWrapper,
+} from './styles';
 
 const Skilss = () => (
   <PageWrapper>
-    <TitleContainer>
-      <Title>
-        My Skills
-      </Title>
-    </TitleContainer>
+    <PageTitle>
+      Minhas habilidades
+    </PageTitle>
   </PageWrapper>
 );
 

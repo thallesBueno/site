@@ -10,10 +10,17 @@ export default createGlobalStyle`
     transition-timing-function: ease-in-out;
     transition: color ${({ theme }) => theme.transitionDuration}, background-color ${({ theme }) => theme.transitionDuration};
     -ms-overflow-style: none;
+
     scrollbar-width: none; 
+
     &::-webkit-scrollbar {
       display: none;
     }
+
+    &::selection {
+    color: ${({ theme }) => theme.colors.mainColor};
+    background: ${({ theme }) => theme.colors.textColor};
+  }
   }
 
   html, body, #root {

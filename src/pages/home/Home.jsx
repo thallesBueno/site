@@ -1,16 +1,12 @@
 import React from 'react';
 import {
   PageWrapper, Title, ContentContainer,
-} from './HomeStyles';
+} from './styles';
 
 const Home = () => (
   <PageWrapper>
     <ContentContainer>
-      <Title>
-        thalles
-        <br />
-        bueno
-      </Title>
+      <Title>thalles bueno</Title>
     </ContentContainer>
   </PageWrapper>
 );

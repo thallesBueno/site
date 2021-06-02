@@ -1,12 +1,13 @@
 import React from 'react';
+import PageTitle from '../../components/pageTitle';
 import {
-  PageWrapper, Title, TitleContainer,
-} from './AboutMeStyles';
+  PageWrapper, TitleContainer,
+} from './styles';
 
 const AboutMe = () => (
   <PageWrapper>
     <TitleContainer>
-      <Title>About me</Title>
+      <PageTitle>Sobre mim</PageTitle>
     </TitleContainer>
   </PageWrapper>
 );

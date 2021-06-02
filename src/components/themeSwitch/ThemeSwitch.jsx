@@ -18,8 +18,8 @@ const StyledButton = styled.button`
 
 
   &:hover {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     transition: 0.2s;
   }
 `;

@@ -1,3 +1,5 @@
+import favicon from '../../assets/favicons/lightFavicon.svg';
+
 const defaultTheme = {
   name: 'light',
   colors: {
@@ -7,6 +9,7 @@ const defaultTheme = {
     textColorContrast: '#e4e5df',
   },
   transitionDuration: '1s',
+  favicon,
 };
 
 export default defaultTheme;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Element } from 'react-scroll';
+import { Helmet } from 'react-helmet';
 
 import GlobalStyle from './styles/global';
 import lightTheme from './styles/themes/lightTheme';
@@ -10,7 +11,7 @@ import DeafaultLayout from './layouts/defaultLayout/DefaultLayout';
 import HomePage from './pages/home/Home';
 import AboutMePage from './pages/aboutMe/AboutMe';
 import SkillsPage from './pages/skills/Skills';
-import ProjectsPage from './pages/projects/Projects';
+// import ProjectsPage from './pages/projects/Projects';
 import ContactPage from './pages/contact/Contact';
 
 import ThemeSwitch from './components/themeSwitch/ThemeSwitch';
@@ -22,37 +23,41 @@ const pages = [
   {
     element: <HomePage />,
     pageId: 'homePage',
-    pageName: 'home',
+    pageName: 'início',
   },
   {
     element: <AboutMePage />,
     pageId: 'aboutMePage',
-    pageName: 'about me',
+    pageName: 'sobre mim',
   },
   {
     element: <SkillsPage />,
     pageId: 'skillsPage',
-    pageName: 'my skills',
-  },
-  {
-    element: <ProjectsPage />,
-    pageId: 'projectsPage',
-    pageName: 'my projects',
+    pageName: 'habilidades',
   },
   {
     element: <ContactPage />,
     pageId: 'contactPage',
-    pageName: 'contact me',
+    pageName: 'contatos',
   },
 ];
 
 const App = () => {
-  const [theme, setTheme] = usePersistedState('theme', darkTheme);
+  const [actualTheme, setTheme] = usePersistedState('theme', darkTheme);
 
-  const handleThemeSwitch = () => setTheme((oldTheme) => (oldTheme.name === 'light' ? darkTheme : lightTheme));
+  const handleThemeSwitch = () => {
+    if (actualTheme.name === lightTheme.name) {
+      setTheme(darkTheme);
+    } else {
+      setTheme(lightTheme);
+    }
+  };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={actualTheme}>
+      <Helmet>
+        <link rel="icon" href={actualTheme.favicon} />
+      </Helmet>
       <GlobalStyle />
       <DeafaultLayout>
         <ThemeSwitch onClick={handleThemeSwitch} />

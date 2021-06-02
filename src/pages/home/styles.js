@@ -8,33 +8,36 @@ const PageWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleContainer = styled.div`
+const ContentContainer = styled.div`
   text-align: center;
 `;
 
 const Title = styled.h1`
-  font-weight: 600;
-  margin-bottom: 24px;
-  font-size: 48px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 80px;
+  text-transform: capitalize;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 2px ${({ theme }) => theme.colors.textColor};
 `;
 
 const Subtitle = styled.p`
+  padding: 1px 8px;
+  margin-bottom: 8px;
   font-weight: 300;
   font-size: 24px;
-  margin-bottom: 4px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   text-transform: capitalize;
 
   &:hover {
     font-weight: 600;
+    cursor: pointer;
   }
 `;
 
 export {
   PageWrapper,
+  ContentContainer,
   Title,
-  TitleContainer,
   Subtitle,
 };
