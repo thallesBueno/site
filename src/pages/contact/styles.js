@@ -8,39 +8,33 @@ const PageWrapper = styled.div`
   align-items: center;
 `;
 
-const TitleContainer = styled.div`
-  text-align: center;
-`;
-
-const Title = styled.h1`
-  font-weight: 600;
-  margin-bottom: 64px;
-  font-size: 48px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-`;
-
 const ContactsContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  width: 500px;
+  margin-top: 64px;
 `;
 
 const ContactLink = styled.a`
-  width: 33%;
-  font-size: 20px;
-  letter-spacing: 4px;
+  font-size: 16px;
   text-transform: capitalize;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     font-weight: 700;
   }
 `;
 
+const LinkWrapper = styled.div`
+  height: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+`;
+
 export {
   PageWrapper,
-  Title,
-  TitleContainer,
   ContactsContainer,
   ContactLink,
+  LinkWrapper,
 };

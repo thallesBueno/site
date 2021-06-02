@@ -1,3 +1,5 @@
+import favicon from '../../assets/favicons/darkFavicon.svg';
+
 const defaultTheme = {
   name: 'dark',
   colors: {
@@ -7,6 +9,7 @@ const defaultTheme = {
     textColorContrast: '#212121',
   },
   transitionDuration: '1s',
+  favicon,
 };
 
 export default defaultTheme;

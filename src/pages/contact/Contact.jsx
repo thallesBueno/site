@@ -1,22 +1,27 @@
 import React from 'react';
+import PageTitle from '../../components/pageTitle';
 import {
-  PageWrapper, Title, TitleContainer, ContactsContainer, ContactLink,
-} from './ContactStyles';
+  PageWrapper, ContactsContainer, ContactLink, LinkWrapper,
+} from './styles';
 
 const Contact = () => (
   <PageWrapper>
-    <TitleContainer>
-      <Title>
-        Where you can
-        <br />
-        find me?
-      </Title>
+    <div>
+      <PageTitle>
+        Onde você pode me econtrar?
+      </PageTitle>
       <ContactsContainer>
-        <ContactLink target="_blank" href="https://www.linkedin.com/in/thalles-bueno-721193172">linkedin</ContactLink>
-        <ContactLink target="_blank" href="https://www.instagram.com/buenothalles/">instagram</ContactLink>
-        <ContactLink target="_blank" href="https://github.com/thallesBueno/">github</ContactLink>
+        <LinkWrapper>
+          <ContactLink target="_blank" href="https://www.linkedin.com/in/thalles-bueno-721193172">linkedin</ContactLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <ContactLink target="_blank" href="https://www.instagram.com/buenothalles/">instagram</ContactLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <ContactLink target="_blank" href="https://github.com/thallesBueno/">github</ContactLink>
+        </LinkWrapper>
       </ContactsContainer>
-    </TitleContainer>
+    </div>
   </PageWrapper>
 );
 

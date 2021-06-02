@@ -21,20 +21,19 @@ const Container = styled.div`
 const Circle = styled.div`
   position: absolute;
   right: -20px;
-  top: calc(${({ topOffset }) => topOffset * 0.91}% + 12px);
+  top: calc(${({ topOffset }) => topOffset * 0.84}% + 12px);
   width: 8px;
   height: 8px;
   transform: translate(-50%,-50%);
   border-radius: 50%;
-  background: ${({ theme }) => theme.colors.mainColorContrast};  
+  border: 2px solid ${({ theme }) => theme.colors.mainColorContrast};
 `;
-
 const StyledLink = styled(Link)`
   position: relative;
-  font-size: 20px;
+  font-size: 16px;
   color: ${({ theme }) => theme.colors.textColor};
   transition: transform 0.5s;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 
   &:last-of-type {
     margin-bottom: 0px;

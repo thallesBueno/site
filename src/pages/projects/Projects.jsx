@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   PageWrapper, Title, ContentContainer,
-} from './ProjectsStyles';
+} from './styles';
 
 const AboutMe = () => (
   <PageWrapper>
